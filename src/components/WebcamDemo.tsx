@@ -27,6 +27,7 @@ const WebcamDemo = (): JSX.Element => {
       <p>{`Loading: ${isLoading}`}</p>
       <p>{`Face Detected: ${detected}`}</p>
       <p>{`Number of faces detected: ${facesDetected}`}</p>
+      <p>Kelompok 2 = Hafiyan Rizqi, Dimas Alfauzi, Lusiana Situmorang</p>
       <div style={{ width, height, position: 'relative' }}>
         {boundingBox.map((box, index) => (
           <div

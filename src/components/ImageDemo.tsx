@@ -16,7 +16,7 @@ const ImageDemo = (): JSX.Element => {
       <p>{`Loading: ${isLoading}`}</p>
       <p>{`Face Detected: ${detected}`}</p>
       <p>{`Number of faces detected: ${facesDetected}`}</p>
-      <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
+      <div style={{ width: '100vw', height: '100%', position: 'relative' }}>
         {boundingBox.map((box, index) => (
           <div
             key={`${index + 1}`}
@@ -31,7 +31,7 @@ const ImageDemo = (): JSX.Element => {
             }}
           />
         ))}
-        <img
+        {/* <img
           crossOrigin="anonymous"
           ref={imgRef}
           alt=""
@@ -48,7 +48,7 @@ const ImageDemo = (): JSX.Element => {
             objectFit: 'fill',
           }}
           src="https://previews.123rf.com/images/gdolgikh/gdolgikh1504/gdolgikh150400087/38738606-gruppe-gl%C3%BCckliche-junge-leute-isoliert-auf-wei%C3%9Fem-hintergrund.jpg"
-        />
+        /> */}
       </div>
     </div>
   );
